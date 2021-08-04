@@ -1,0 +1,9 @@
+
+footer{
+    color: tomato;
+    @include flexorino(wrap, flex-end);
+    p{
+        font-size: 40px;
+    }
+
+}

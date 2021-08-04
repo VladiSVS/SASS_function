@@ -1,0 +1,20 @@
+@mixin flexorino($wrap, $pappi:default) {
+    display: flex;
+    flex-wrap: $wrap; // = flex-wrap: no-wrap;
+    justify-content: $pappi;
+}
+
+@import "./sassComponents/galleryWrap";
+@import "./sassComponents/header";
+@import "./sassComponents/footer";
+
+
+
+// gallery1 
+.gallery{
+    @include flexorino(nowrap, inherit);
+    img{
+        width: 33%;
+        margin: 5px;
+    }
+}
